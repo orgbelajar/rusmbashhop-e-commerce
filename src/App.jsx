@@ -4,6 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged } from "firebase/auth";
 import { collection, getDocs } from "firebase/firestore";
 import { auth, db } from "./config/firebase"; // Pastikan path ini benar
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faEye, faEyeSlash)
 
 // Import actions dari userSlice
 import { setUser, clearUser, setLoading } from "./features/user/userSlice";

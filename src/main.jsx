@@ -13,6 +13,8 @@ import CartPage from "./pages/CartPage.jsx";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",

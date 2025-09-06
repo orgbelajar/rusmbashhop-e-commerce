@@ -1,8 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { signOut } from "firebase/auth";
 import { auth } from "../config/firebase";
 import { selectTotalItems } from "../features/cart/cartSlice";
+import Brand from "./Brand";
 
 // Impor ikon sederhana (Anda bisa menggantinya dengan library ikon seperti react-icons)
 const ShoppingCartIcon = () => (
@@ -42,12 +43,7 @@ function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo / Brand Name */}
-          <Link
-            to="/"
-            className="text-2xl font-bold text-orange-500 hover:text-orange-400 transition-colors"
-          >
-            RusmbaShop
-          </Link>
+          <Brand />
 
           {/* Navigasi Kanan */}
           <div className="flex items-center space-x-6">
