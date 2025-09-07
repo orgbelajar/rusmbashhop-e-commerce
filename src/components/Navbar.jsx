@@ -5,7 +5,6 @@ import { auth } from "../config/firebase";
 import { selectTotalItems } from "../features/cart/cartSlice";
 import Brand from "./Brand";
 
-// Impor ikon sederhana (Anda bisa menggantinya dengan library ikon seperti react-icons)
 const ShoppingCartIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

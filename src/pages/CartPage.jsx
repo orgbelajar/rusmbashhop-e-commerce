@@ -6,7 +6,7 @@ import {
   decrementItem,
   selectTotalPrice,
 } from "../features/cart/cartSlice";
-import { doc, deleteDoc, updateDoc, setDoc } from "firebase/firestore";
+import { doc, deleteDoc, updateDoc } from "firebase/firestore";
 import { db } from "../config/firebase";
 
 function CartPage() {

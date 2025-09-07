@@ -8,6 +8,7 @@ const initialState = {
 const userSlice = createSlice({
   name: "user",
   initialState,
+  
   reducers: {
     // Action untuk menetapkan pengguna saat login
     setUser: (state, action) => {

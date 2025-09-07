@@ -3,17 +3,20 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./app/store";
 
-// Buat beberapa komponen halaman dasar di src/pages
+// Komponen halaman dasar di src/pages
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import CartPage from "./pages/CartPage.jsx";
 
-import { Provider } from "react-redux";
-import { store } from "./app/store";
+// FontAwesome setup
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-
+library.add(faEye, faEyeSlash);
 
 const router = createBrowserRouter([
   {
@@ -21,16 +24,13 @@ const router = createBrowserRouter([
     element: <App />, // App.jsx akan menjadi layout utama (Navbar, Footer)
     children: [
       { index: true, element: <HomePage /> },
+      { path: "/cart", element: <CartPage /> }, // Navbar dan Footer tetap ada di CartPage
       // Tambahkan rute lain di sini nanti
     ],
   },
   {
     path: "/login",
     element: <LoginPage />,
-  },
-  {
-    path: "/cart",
-    element: <CartPage />,
   },
   {
     path: "/register",

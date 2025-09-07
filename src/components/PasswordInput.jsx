@@ -42,9 +42,6 @@ function PasswordInput({ value, onChange, error }) {
         Password harus 12–16 karakter, mengandung huruf besar, huruf kecil, dan
         angka.
       </p>
-
-      {/* Error message */}
-      {error && <p className="text-xs text-red-500 mt-1">{error}</p>}
     </div>
   );
 }
