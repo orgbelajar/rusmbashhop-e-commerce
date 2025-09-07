@@ -25,7 +25,7 @@ Rusmbashop adalah *Capstone Project Student Developer Initiative bersama IBM Ski
 
 1.  **Clone repositori:**
     ```bash
-    git clone https://github.com/username-anda/rusmbasshop.git
+    git clone https://github.com/orgbelajar/rusmbasshop.git
     cd rusmbasshop
     ```
 
