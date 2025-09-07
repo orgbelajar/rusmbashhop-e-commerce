@@ -5,6 +5,7 @@ import Brand from "../components/Brand";
 // Impor hook dan komponen
 import { useAuth } from "../hooks/useAuth";
 import PasswordInput from "../components/PasswordInput";
+import googleIcon from "../assets/google-icon.svg";
 
 function RegisterPage() {
   // Gunakan custom hook untuk mendapatkan semua state dan logika
@@ -89,8 +90,8 @@ function RegisterPage() {
             {/* icon dan teks tombol login dengan google) */}
             <span className="flex items-center justify-center gap-3">
               <img
-                src="src/assets/google-icon.svg"
-                alt=""
+                src={googleIcon}
+                alt="Google Icon"
                 className="w-5 h-5"
                 aria-hidden="true"
               />

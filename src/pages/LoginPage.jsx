@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useAuth } from "../hooks/useAuth";
 import PasswordInput from "../components/PasswordInput";
 import Brand from "../components/Brand";
+import googleIcon from "../assets/google-icon.svg";
 
 function LoginPage() {
   const {
@@ -89,8 +90,8 @@ function LoginPage() {
           >
             <span className="flex items-center justify-center gap-3">
               <img
-                src="src/assets/google-icon.svg"
-                alt=""
+                src={googleIcon}
+                alt="Google Icon"
                 className="w-5 h-5"
                 aria-hidden="true"
               />
