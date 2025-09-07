@@ -36,7 +36,7 @@ function Footer() {
             <span className="text-blue-400 font-medium">Nabil</span>, dibantu
             IBM Granite dalam rangka{" "}
             <span className="italic">
-              Capstone Project Student Development Initiative IBM X Hacktiv8
+              Capstone Project Student Development Initiative IBM X Hacktiv8 X UPNVJ
             </span>
             .
           </p>
