@@ -2,8 +2,6 @@
 
 Rusmbashop adalah *Capstone Project Student Developer Initiative bersama IBM SkillsBuild X Hacktiv8 X UPNVJ* berupa aplikasi web e-commerce *full-stack* yang modern dan responsif. Dibangun dengan React dan Firebase, aplikasi ini mendemonstrasikan fitur-fitur esensial seperti otentikasi pengguna, *account linking*, dan keranjang belanja persisten yang terikat pada akun.
 
----
-
 ## Fitur Utama ✨
 
 * **Otentikasi Pengguna**: Registrasi dan login aman via Email/Password & Google.
@@ -13,13 +11,9 @@ Rusmbashop adalah *Capstone Project Student Developer Initiative bersama IBM Ski
 * **Manajemen State Terpusat**: Menggunakan Redux Toolkit untuk state global.
 * **Desain Responsif**: Tampilan optimal di berbagai perangkat dengan Tailwind CSS.
 
----
-
 ## Teknologi yang Digunakan 🚀
 
 **React.js (Vite)**, **Firebase (Authentication, Firestore)**, **Redux Toolkit**, **React Router**, dan **Tailwind CSS**.
-
----
 
 ## Panduan Instalasi 🛠️
 
@@ -51,8 +45,6 @@ Rusmbashop adalah *Capstone Project Student Developer Initiative bersama IBM Ski
     npm run dev
     ```
     Aplikasi akan berjalan di `http://localhost:5173`.
-
----
 
 ## Dukungan AI dalam Pengembangan 🤖
 
