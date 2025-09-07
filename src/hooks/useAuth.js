@@ -15,8 +15,24 @@ export const useAuth = (authFunction, successRedirect = '/login') => {
     e.preventDefault();
     setError('');
 
-    if (password.length < 8) {
-      setError('Password harus memiliki setidaknya 8 karakter.');
+    // Validasi password sesuai policy
+    if (password.length < 12 || password.length > 16) {
+      setError('Password harus memiliki panjang 12-16 karakter.');
+      return;
+    }
+
+    if (!/[A-Z]/.test(password)) {
+      setError('Password harus mengandung huruf besar.');
+      return;
+    }
+
+    if (!/[a-z]/.test(password)) {
+      setError('Password harus mengandung huruf kecil.');
+      return;
+    }
+
+    if (!/[0-9]/.test(password)) {
+      setError('Password harus mengandung angka.');
       return;
     }
 
